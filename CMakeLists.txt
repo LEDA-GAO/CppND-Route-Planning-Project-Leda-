@@ -40,7 +40,7 @@ if(MSVC)
 endif()
 
 # Create a library for unit tests
-add_library(route_planner OBJECT src/route_planner.cpp src/model.cpp src/route_model.cpp)
+add_library(route_planner OBJECT src/route_planner.cpp src/model.cpp src/route_model.cpp src/CompareNodes.cpp)
 target_include_directories(route_planner PRIVATE thirdparty/pugixml/src)
 
 # Add testing executable
